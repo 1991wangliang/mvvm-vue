@@ -1,14 +1,13 @@
 <template>
-  <div class="hello">
-    <h1>{{ data.name }}</h1>
-    <button @click="data.hello()">button</button>
+  <div>
+    <h1>{{ hello.name }}</h1>
+    <button @click="hello.hello()">button</button>
   </div>
 </template>
 
 <script setup lang="ts">
-import { helloWorld } from './helloWorld'
-
-const data = helloWorld()
+import { init } from './helloWorld'
+const hello = init()
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

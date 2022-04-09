@@ -12,7 +12,6 @@ export class Hello extends AbsHello {
 }
 
 export const init = () => {
-  debugger
   const hello = new Hello()
   beanFactory.addBean('AbsHello', hello)
 }
