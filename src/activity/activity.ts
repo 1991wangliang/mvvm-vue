@@ -1,4 +1,4 @@
-import { init as hello } from './components/helloworld.impl'
+import { init as hello } from './views/HomeView.activity'
 
 // scanner activity impl
 export const scanner = () => {

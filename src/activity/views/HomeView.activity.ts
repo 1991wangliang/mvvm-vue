@@ -1,4 +1,4 @@
-import { AbsHelloAcitivity, beanFactory } from '@/components/helloWorld'
+import { AbsHelloAcitivity, beanFactory } from '@/views/HomeView.model'
 
 class HelloAcitivity extends AbsHelloAcitivity {
   test = (): void => {
