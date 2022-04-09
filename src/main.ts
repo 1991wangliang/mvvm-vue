@@ -2,6 +2,6 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-import { beanScanner } from '@/activity/scanner'
+import { scannerBeans } from '@/activity/scanner'
 
-createApp(App).use(beanScanner).use(store).use(router).mount('#app')
+createApp(App).use(scannerBeans).use(store).use(router).mount('#app')
