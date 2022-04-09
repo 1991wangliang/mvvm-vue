@@ -11,6 +11,6 @@
 </template>
 
 <script setup lang="ts">
-import { initBean } from '@/views/HomeView.model'
-const hello = initBean()
+import { loadBean } from '@/views/HomeView.model'
+const hello = loadBean()
 </script>

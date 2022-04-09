@@ -10,7 +10,7 @@ class HelloAcitivity extends AbsHelloAcitivity {
   }
 }
 
-export const init = () => {
+export const initBean = () => {
   const hello = new HelloAcitivity()
   beanFactory.addBean('HelloAcitivity', hello)
 }

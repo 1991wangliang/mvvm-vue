@@ -19,7 +19,7 @@ export abstract class AbsHelloAcitivity {
   }
 }
 
-export const initBean = () => {
+export const loadBean = () => {
   // register HelloAcitivity Bean
   return reactive(beanFactory.getBean('HelloAcitivity'))
 }
