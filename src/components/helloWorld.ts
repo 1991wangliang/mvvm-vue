@@ -1,6 +1,6 @@
 import { reactive } from 'vue'
-import { beanFactory } from '@/lib'
-export * from '@/lib'
+import { beanFactory } from '@/framework/beanFactory'
+export * from '@/framework/beanFactory'
 export abstract class AbsHelloAcitivity {
   name: string
 
