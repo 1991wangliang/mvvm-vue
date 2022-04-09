@@ -1,13 +1,15 @@
 <template>
   <div>
     <h1>{{ hello.name }}</h1>
+    <button @click="hello.test()">test</button>
+    <input type="text" v-model="hello.name" />
     <button @click="hello.hello()">button</button>
   </div>
 </template>
 
 <script setup lang="ts">
-import { init } from './helloWorld'
-const hello = init()
+import { initBean } from './helloWorld'
+const hello = initBean()
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
