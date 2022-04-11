@@ -1,4 +1,4 @@
-export class BeanFactory {
+class BeanFactory {
   map:Map<string, object> = new Map<string, object>()
   addBean (type:string, obj:object) {
     this.map.set(type, obj)
