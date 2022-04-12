@@ -10,11 +10,11 @@ export abstract class AbsHelloAcitivity {
 
   abstract hello():void
 
-  hint (str:string) {
+  hint(str:string) {
     alert(str)
   }
 
-  constructor () {
+  constructor() {
     this.name = 'this is a name '
   }
 }

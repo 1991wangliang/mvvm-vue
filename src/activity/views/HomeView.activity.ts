@@ -5,7 +5,7 @@ class HelloAcitivity extends AbsHelloAcitivity {
     this.hint('123-456')
   };
 
-  hello (): void {
+  hello(): void {
     this.name = 'hello'
   }
 }
