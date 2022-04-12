@@ -16,7 +16,7 @@ export const homeStore = defineStore('home', {
       })
     },
     test() {
-      this.name = 'hello'
+      this.name = 'test'
     }
   }
 })

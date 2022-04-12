@@ -1,23 +1,25 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-      <div>
-        <h1>{{ home.name }}</h1>
-        <button @click="home.test()">test</button>
-        <input type="text" v-model="home.name" />
-        <button @click="home.hello()">hello</button>
-        <button @click="hint()">hint</button>
-        <button @click="reset()">reset</button>
-        <button @click="dispose()">dispose</button>
+    <logo />
+    <div>
+      <h1>{{ home.name }}</h1>
+      <button @click="home.test()">test</button>
+      <input type="text" v-model="home.name" />
+      <button @click="home.hello()">hello</button>
+      <button @click="hint()">hint</button>
+      <button @click="reset()">reset</button>
+      <button @click="dispose()">dispose</button>
     </div>
   </div>
 </template>
 
 <script lang="ts">
+import logo from '@/components/logo.vue'
 import { defineComponent } from 'vue'
 import { homeStore } from '@/store/home'
 
 export default defineComponent({
+  components: { logo },
   setup() {
     const home = homeStore()
 
@@ -55,5 +57,4 @@ export default defineComponent({
     }
   }
 })
-
 </script>
