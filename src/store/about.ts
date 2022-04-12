@@ -1,4 +1,3 @@
-// @ts-check
 import { defineStore } from 'pinia'
 import { homeStore } from '@/store/home'
 

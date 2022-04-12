@@ -10,6 +10,7 @@ import { aboutStore } from '@/store/about'
 
 export default defineComponent({
   setup() {
+    // 夸界面传递数据
     const about = aboutStore()
     return {
       about

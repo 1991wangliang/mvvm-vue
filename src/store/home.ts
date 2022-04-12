@@ -1,8 +1,6 @@
-// @ts-check
 import { defineStore } from 'pinia'
 
-export const homeStore = defineStore({
-  id: 'home',
+export const homeStore = defineStore('home', {
   state: () => ({
     name: 'lorne'
   }),
